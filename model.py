@@ -4,11 +4,6 @@ from uuid import uuid4
 mutation = MutationType()
 query = QueryType()
 orders = []
-
-@query.field("hello")
-def resolve_hello(_, info):
-    return "Hi there"
-
 class Coffee:
    def __init__(self, size, name, coffee_type):
        self.size = size
